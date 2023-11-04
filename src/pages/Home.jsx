@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import './Home.css'; // Importa el archivo CSS para Home
 
 function Home() {
+  const oelo =123
   return (
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Bienvenido a Mercadata</h1>
+          <h1>Bienvenido a Mercadata{oelo}</h1>
           <p>Tu aliado en soluciones de e-commerce.</p>
           <Link to="/contact" className="hero-cta">Contáctanos</Link>
         </div>
