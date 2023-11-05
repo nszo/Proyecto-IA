@@ -6,3 +6,9 @@ import tarjetas from '../data/tarjetas.json';
   <Card key={item.key} title={item.title} description={item.description} />
 ))}
 </div>
+
+
+
+
+/* yarn add @tensorflow/tfjs */
+/* yarn remove @tensorflow/tfjs */
