@@ -1,9 +1,13 @@
 // src/components/Footer.jsx
 import React from 'react';
+// Importa solo los íconos que necesitas de React Icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+  // Obtén el año actual para que se actualice automáticamente cada año
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="pie-pagina">
       <div className="grupo-1">
@@ -16,40 +20,22 @@ const Footer = () => {
         </div>
         <div className="box">
           <h2>SOBRE NOSOTROS</h2>
-          <p>un grupo de estudiantes que tienen la visión de crear un negocio o una empresa</p>
-          <p>motivados por la oportunidad de crear algo nuevo y de tener un impacto positivo</p>
-          <br />
-          <p>estudiantes que están llenos de ideas innovadoras.</p>
-          <p>estudiantes que están unidos por un objetivo común.</p>
-          <p>llenos de energía y entusiasmo.</p>
-          <p>aprendiendo y creciendo.</p>
+          <p>Motivados por la oportunidad de crear algo nuevo y de tener un impacto positivo</p>
         </div>
         <div className="box">
-          <h2>SIGUENOS</h2>
+          <h2>SÍGUENOS</h2>
           <div className="red-social">
-            <a href="#" className="fa fa-facebook"><FaFacebookF /></a>
-            <a href="#" className="fa fa-instagram"><FaInstagram /></a>
-            <a href="#" className="fa fa-twitter"><FaTwitter /></a>
-          </div>
-          <div className="red-social">
-            <a href="#" className="fa fa-facebook"><FaFacebookF /></a>
-            <a href="#" className="fa fa-instagram"><FaInstagram /></a>
-            <a href="#" className="fa fa-twitter"><FaTwitter /></a>
-          </div>
-          <div className="red-social">
-            <a href="#" className="fa fa-facebook"><FaFacebookF /></a>
-            <a href="#" className="fa fa-instagram"><FaInstagram /></a>
-            <a href="#" className="fa fa-twitter"><FaTwitter /></a>
-          </div>
-          <div className="red-social">
-            <a href="#" className="fa fa-facebook"><FaFacebookF /></a>
-            <a href="#" className="fa fa-instagram"><FaInstagram /></a>
-            <a href="#" className="fa fa-twitter"><FaTwitter /></a>
+            {/* Utiliza los componentes de íconos directamente */}
+            <a href="#" className="icon"><FaFacebookF /></a>
+            <a href="#" className="icon"><FaInstagram /></a>
+            <a href="#" className="icon"><FaTwitter /></a>
+            <a href="#" className="icon"><FaYoutube /></a>
           </div>
         </div>
       </div>
       <div className="grupo-2">
-        <small>Todos los derechos reservados © {new Date().getFullYear()} <b>Mercadata</b></small>
+        {/* Muestra el año actual dinámicamente */}
+        <small>Todos los derechos reservados © {currentYear} <b>Mercadata</b></small>
       </div>
     </footer>
   );

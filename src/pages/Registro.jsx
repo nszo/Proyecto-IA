@@ -1,7 +1,7 @@
 import React from 'react'
-import './Service.css'
+import './Registro.css'
 
-function Services() {
+function Registro() {
 	return (
 		<>
 
@@ -18,4 +18,4 @@ function Services() {
 	)
 }
 
-export default Services
+export default Registro

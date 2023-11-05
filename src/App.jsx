@@ -3,21 +3,20 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './layout/Navbar';
 import Footer from './layout/Footer';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import Services from './pages/Services'
+import Inicio from './pages/Inicio';
+import Contacto from './pages/Contacto';
+import Login from './pages/Login'
+import Registro from './pages/Registro'
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        {/* Agrega más rutas según sea necesario */}
+        <Route path="/" element={<Inicio />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
       </Routes>
       <Footer />
     </Router>

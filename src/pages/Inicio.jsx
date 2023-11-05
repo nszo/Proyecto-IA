@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Home.css'; // Importa el archivo CSS para Home
-import Card from '../components/Card';
+import './Inicio.css'; // Importa el archivo CSS para Home
 
 
-function Home() {
+function Inicio() {
   const oelo =123
   return (
     <div className="home-container">
@@ -47,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Inicio;
