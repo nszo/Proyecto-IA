@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Home.css'; // Importa el archivo CSS para Home
+import Card from '../components/Card';
+
 
 function Home() {
   const oelo =123
