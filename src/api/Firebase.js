@@ -1,25 +1,30 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore'; // si vas a usar Firestore
-import 'firebase/auth'; // si vas a usar la autenticación
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "tu_api_key",
-  authDomain: "tu_auth_domain",
-  projectId: "tu_project_id",
-  storageBucket: "tu_storage_bucket",
-  messagingSenderId: "tu_messaging_sender_id",
-  appId: "tu_app_id",
-  measurementId: "tu_measurement_id"
+  apiKey: "AIzaSyCLhp_PzB3e9Sy1U8_X5knNAqCcavy4Zl4",
+  authDomain: "innotech-88215.firebaseapp.com",
+  projectId: "innotech-88215",
+  storageBucket: "innotech-88215.appspot.com",
+  messagingSenderId: "1071171355513",
+  appId: "1:1071171355513:web:efb7835a5506b8ea6ae5a8",
+  measurementId: "G-TPMJ67R42G"
 };
 
-// Inicializa Firebase
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-// Si vas a utilizar Firestore
-const db = firebase.firestore();
+var admin = require("firebase-admin");
 
-// Si vas a utilizar la autenticación
-const auth = firebase.auth();
+// La ruta debe apuntar al archivo JSON que descargaste
+var serviceAccount = require("./path/to/serviceAccountKey.json");
 
-// Exporta las constantes para usarlas en otros archivos
-export { db, auth };
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});

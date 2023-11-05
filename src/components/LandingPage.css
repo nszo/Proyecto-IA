@@ -1,0 +1,144 @@
+.landing-container {
+  height: 100vh;
+  background-image: url('../public/Recurso 12.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px; /* Ajusta esto al tamaño de tu logo */
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-button {
+  background: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.text-content {
+  max-width: 40%;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-button {
+  background: #8464A0; /* Ajusta este color según tu diseño */
+  border: none;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.illustration {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .main-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-content, .illustration {
+    max-width: 100%;
+    text-align: center; /* Center the text for small screens */
+  }
+
+  .text-content h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .text-content p {
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+  }
+
+  .buttons-container {
+    align-items: center; /* Center buttons on small screens */
+  }
+
+  .main-button {
+    padding: 10px 20px; /* Smaller buttons for smaller screens */
+  }
+
+  .illustration {
+    width: 80%; /* Adjust illustration size on small screens */
+    margin-top: 20px; /* Add some space above the illustration */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button, .main-button {
+    width: 100%; /* Full width buttons on very small screens */
+    margin-bottom: 10px; /* Add space between stacked buttons */
+  }
+
+  .logo {
+    width: 80px; /* Smaller logo for very small screens */
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+}

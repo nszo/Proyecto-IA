@@ -25,6 +25,11 @@
     display: flex;
 }
 
+.profile-pic {
+    width: 4em;
+    height: 4em;
+  }
+  
 .nav-logo {
     color: #fff;
     /* Letra blanca para el logo */

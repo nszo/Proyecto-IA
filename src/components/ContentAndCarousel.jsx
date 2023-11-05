@@ -11,9 +11,9 @@ const ContentAndCarousel = ({ carouselData }) => {
   return (
     <div className="container">
       <div className="text-section">
-        <div className="text-content"> {/* Agregado para el padding */}
-          <h2>{carouselData.title}</h2> {/* Usamos h2 aquí */}
-          <h3>{carouselData.name}</h3> {/* Usamos h3 para el nombre */}
+        <div className="text-content">
+          <h2>{carouselData.title}</h2>
+          <h3>{carouselData.name}</h3>
           <p>{carouselData.description}</p>
         </div>
       </div>

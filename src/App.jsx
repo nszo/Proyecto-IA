@@ -8,6 +8,8 @@ import Contacto from './pages/Contacto';
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 
+
+
 function App() {
   return (
     <Router>

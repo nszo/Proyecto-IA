@@ -4,6 +4,7 @@ import { FaBars } from 'react-icons/fa'; // Importa el icono de hamburguesa
 import './Navbar.css';
 import logoImage from '../assets/Logotipo.png';
 
+
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
-      
+
       if (mobileMenuOpen && isScrolled) {
         setMobileMenuOpen(false); // Cierra el menú al hacer scroll
       }

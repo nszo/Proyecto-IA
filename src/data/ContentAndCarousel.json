@@ -1,7 +1,7 @@
 {
-    "title": "lorem",
-    "name": "lorem",
-    "description": "lorem,lorem,lorem,lorem,lorem,lorem,lorem,lorem",
+    "title": "Inteligencia artificial",
+    "name": "IA",
+    "description": "La inteligencia artificial es la capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana.",
     "images": [
         "../public/owen-beard.jpg",
         "../public/possessed-photography.jpg",

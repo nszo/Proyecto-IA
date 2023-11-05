@@ -12,3 +12,11 @@ import tarjetas from '../data/tarjetas.json';
 
 /* yarn add @tensorflow/tfjs */
 /* yarn remove @tensorflow/tfjs */
+
+/* yarn add firebase-admin */
+/* Firebase */
+/* firebase login */
+/* firebase init */
+/* firebase deploy */
+/*  */
+/*  */

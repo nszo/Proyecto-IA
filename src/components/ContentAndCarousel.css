@@ -65,9 +65,50 @@
   .text-section,
   .carousel-section {
     width: 100%;
+
   }
 
   .carousel-thumbnails {
     overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia la dirección de los flex items */
+  }
+
+  .text-section,
+  .carousel-section {
+    width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+  }
+
+  .carousel-thumbnails {
+    overflow-x: auto; /* Permite el desplazamiento horizontal de las miniaturas */
+  }
+}
+
+/* Ajustes para pantallas de teléfonos móviles */
+@media (max-width: 480px) {
+  .container{
+    margin: 5em;
+    box-sizing: border-box;
+  }
+
+.text-content h2 {
+    font-size: 1.5rem; /* Disminuye el tamaño de la fuente */
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem; /* Disminuye el tamaño de la fuente */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* Disminuye el tamaño de la fuente */
+  }
+
+  .thumbnail {
+    width: 50px; /* Reduce el tamaño de las miniaturas */
+    height: 50px;
   }
 }
