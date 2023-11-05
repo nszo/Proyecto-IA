@@ -2,7 +2,7 @@
   display: flex;
   width: 70%; /* El contenedor principal ahora ocupa el 70% */
   margin: auto; /* Centrar el contenedor si es menor que el viewport */
-  height: 500px; /* Ajusta esto a tu preferencia */
+  height: 600px; /* Ajusta esto a tu preferencia */
 }
 
 .text-section {
@@ -33,7 +33,6 @@
 .carousel-main-image img {
   max-width: 100%;
   max-height: 80%;
-  border: 3px solid #333;
 }
 
 .carousel-thumbnails {

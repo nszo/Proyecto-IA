@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Inicio.css'; // Importa el archivo CSS para Home
-import ContentAndCarousel from '../components/ContentAndCarousel';
+import ContentAndCarousel  from "../components/ContentAndCarousel";
 import carouselData from '../data/ContentAndCarousel.json';
 
 function Inicio() {
@@ -21,11 +21,8 @@ function Inicio() {
           <a href="#" className="home-button">Registrarse</a>
         </div>
       </div>
-
       <ContentAndCarousel carouselData={carouselData} />
     </>
-
-
   );
 }
 
