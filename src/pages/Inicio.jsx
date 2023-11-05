@@ -1,48 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Inicio.css'; // Importa el archivo CSS para Home
-
+import ContentAndCarousel from '../components/ContentAndCarousel';
+import carouselData from '../data/ContentAndCarousel.json';
 
 function Inicio() {
-  const oelo =123
+
   return (
-    <div className="home-container">
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1>Bienvenido a Mercadata{oelo}</h1>
-          <p>Tu aliado en soluciones de e-commerce.</p>
-          <Link to="/contact" className="hero-cta">Contáctanos</Link>
+    <>
+      <div className="home-container">
+        <div className="home-background-shape"></div>
+        <div className="home-content">
+          <h1 className="home-big-title">¿Qué es?</h1>
+          <p className="home-description">
+            Somos una plataforma especializada en todo lo relacionado con el análisis de la competencia,
+            identificación de posibles clientes y compras fraudulentas al igual que tiene acceso a un portafolio
+            online para encontrar el mejor precio y confiabilidad.
+          </p>
+          <a href="#" className="home-button">Ver mas</a>
+          <a href="#" className="home-button">Registrarse</a>
         </div>
-      </section>
+      </div>
 
-      <section className="features-section">
-        <div className="feature">
-          <h2>Plataforma Intuitiva</h2>
-          <p>Administra tu negocio online con una plataforma fácil de usar.</p>
-        </div>
-        {/* Repite para otras características */}
-      </section>
-
-      <section className="services-section">
-        <div className="service">
-          <h2>Gestión de Inventario</h2>
-          <p>Controla tu stock en tiempo real.</p>
-        </div>
-        {/* Repite para otros servicios */}
-      </section>
-
-      <section className="testimonials-section">
-        <div className="testimonial">
-          <p>"Mercadata ha transformado la forma en que hacemos negocios online."</p>
-          <span>- Cliente Satisfecho</span>
-        </div>
-        {/* Repite para otros testimonios */}
-      </section>
-
-      {/* Añade más secciones según sea necesario */}
+      <ContentAndCarousel carouselData={carouselData} />
+    </>
 
 
-    </div>
   );
 }
 

@@ -26,10 +26,13 @@ const Footer = () => {
           <h2>SÍGUENOS</h2>
           <div className="red-social">
             {/* Utiliza los componentes de íconos directamente */}
-            <a href="#" className="icon"><FaFacebookF /></a>
-            <a href="#" className="icon"><FaInstagram /></a>
-            <a href="#" className="icon"><FaTwitter /></a>
-            <a href="#" className="icon"><FaYoutube /></a>
+            <a href="#" className="icon"><FaFacebookF /></a>Laura
+            <a href="#" className="icon"><FaFacebookF /></a>Marcela
+          </div>
+          <div className="red-social">
+            {/* Utiliza los componentes de íconos directamente */}
+            <a href="#" className="icon"><FaFacebookF /></a>Anderson
+            <a href="#" className="icon"><FaFacebookF /></a>Andres
           </div>
         </div>
       </div>

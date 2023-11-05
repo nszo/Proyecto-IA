@@ -3,18 +3,21 @@ import './Registro.css'
 
 function Registro() {
 	return (
-		<>
-
-			<body>
-				<div className='tarjeta'>
-					<div className='izquierda'>
-						<img className='foto' src="./src/assets/Robot.png" alt="" />
-					</div>
-					<p className='derecha'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore neque obcaecati et accusamus impedit odit voluptatum possimus, soluta repudiandae ut nemo perferendis iusto reiciendis placeat corporis fugiat ad.</p>
-				</div>
-		</body >
-
-		</>
+    <>
+      <div className="home-container">
+        <div className="home-background-shape"></div>
+        <div className="home-content">
+          <h1 className="home-big-title">¿Qué es?</h1>
+          <p className="home-description">
+            Somos una plataforma especializada en todo lo relacionado con el análisis de la competencia,
+            identificación de posibles clientes y compras fraudulentas al igual que tiene acceso a un portafolio
+            online para encontrar el mejor precio y confiabilidad.
+          </p>
+          <a href="#" className="home-button">Read More</a>
+          <a href="#" className="home-button">Sign In</a>
+        </div>
+      </div>
+    </>
 	)
 }
 
